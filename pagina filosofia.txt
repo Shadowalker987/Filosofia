@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Metatags Optimizados -->
+    <meta name="description" content="Blog de filosofía por Shadowalker987 - Explorando los grandes pensamientos, reflexiones y análisis filosóficos. Un espacio para debatir las grandes preguntas de la existencia.">
+    <meta name="keywords" content="filosofía, pensadores, filosofía moderna, reflexiones filosóficas, Shadowalker987, corrientes filosóficas, pensamiento crítico">
+    <meta name="author" content="Shadowalker987">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="googlebot" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shadowalker987.github.io/Filosofia/">
+    <meta property="og:title" content="Shadowalker987 - Ideas de Filosofía">
+    <meta property="og:description" content="Blog de filosofía y reflexiones filosóficas - Explorando los grandes pensamientos de la humanidad">
+    
+    <title>Filósofo Shadowalker987 - Ideas y Reflexión</title>
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <style>
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #9c27b0 !important;
+        }
+        .filosofia-header {
+            background: linear-gradient(to right, #1a1a1a, #2d1a3d);
+            padding: 4rem 0;
+            text-align: center;
+            color: #fff;
+        }
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out;
+        }
+        @keyframes octocat-wave {
+            0%, 100% { transform: rotate(0) }
+            20%, 60% { transform: rotate(-25deg) }
+            40%, 80% { transform: rotate(10deg) }
+        }
+        article {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        article:hover {
+            transform: translateY(-5px);
+        }
+        .text-primary {
+            color: #9c27b0 !important;
+        }
+        .seo-text {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- GitHub Corner -->
+    <a href="https://github.com/shadowalker987/filosofia" class="github-corner" aria-label="Ver en GitHub">
+        <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#9c27b0; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Shadowalker987</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pensadores">Pensadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#corrientes">Corrientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reflexiones">Reflexiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header con título principal -->
+    <header class="filosofia-header" id="inicio">
+        <div class="container">
+            <h1 class="display-3 mb-4">Filósofo Shadowalker987</h1>
+            <h2 class="display-5 mb-5">Ideas y Reflexión</h2>
+            <div class="mt-4">
+                <a href="https://github.com/shadowalker987/filosofia" class="btn btn-outline-light">
+                    <i class="fab fa-github me-2"></i>Ver en GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container mt-5">
+        <!-- Imágenes decorativas -->
+        <div class="position-fixed top-0 start-0" style="z-index: -1; opacity: 0.2">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" 
+                 alt="Montañas" class="img-fluid" style="max-width: 300px;">
+        </div>
+        <div class="position-fixed top-0 end-0" style="z-index: -1; opacity: 0.2">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b" 
+                 alt="Naturaleza" class="img-fluid" style="max-width: 300px;">
+        </div>
+
+        <!-- Primera reflexión -->
+        <article class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="display-6 mb-4 text-primary">NO PUEDES CAMBIAR A NADIE</h2>
+            <p class="lead text-dark">
+                No puedes cambiar a una persona. Puedes estar a su lado, ofrecer tu estabilidad, 
+                tu sensatez, tu paz. Puedes compartir tu viaje con ellos, ofrecer tu perspectiva, 
+                pero no su dolor, no puedes cambiar su sendero por ellos, no puedes ofrecerles 
+                respuestas que puedan procesar en este mismo momento.
+            </p>
+            <p class="text-dark">
+                Deberán hallar sus propias respuestas en su propio tiempo, al final los seres 
+                humanos somos seres que aprendemos de errores y experiencias y eso no se podrá cambiar.
+            </p>
+        </article>
+
+        <!-- Segunda reflexión -->
+        <article class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="display-6 mb-4 text-primary">LOS SERES HUMANOS SOMOS SERES EGOÍSTAS</h2>
+            <p class="lead text-dark">
+                Los seres humanos somos egoístas por naturaleza, y esto no es algo necesariamente 
+                malo, sino una característica que compartimos todos.
+            </p>
+            <p class="text-dark">
+                Cuando alguien realiza una acción considerada buena o amable, en el fondo lo hace 
+                buscando algún tipo de satisfacción personal: ya sea sentirse bien consigo mismo, 
+                obtener reconocimiento o esperar una futura recompensa. No significa que las personas 
+                sean malas, sino que siempre actúan con base en lo que creen que les beneficiarán 
+                de alguna manera.
+            </p>
+        </article>
+
+        <!-- Sección de contribución -->
+        <section class="alert alert-info mt-4">
+            <h3><i class="fab fa-github me-2"></i>¿Quieres contribuir?</h3>
+            <p>Este proyecto es de código abierto. Puedes contribuir con tus propias reflexiones filosóficas a través de GitHub.</p>
+            <a href="https://github.com/shadowalker987/filosofia" class="btn btn-primary">
+                Contribuir al proyecto
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light mt-5 py-3">
+        <div class="container text-center">
+            <p>
+                <a href="https://github.com/shadowalker987" class="text-light text-decoration-none">
+                    <i class="fab fa-github me-2"></i>Sígueme en GitHub
+                </a>
+            </p>
+            <!-- Enlaces ocultos para SEO -->
+            <div class="seo-text">
+                <a href="#inicio">Inicio</a>
+                <a href="#pensadores">Pensadores Filosóficos</a>
+                <a href="#corrientes">Corrientes Filosóficas</a>
+                <a href="#reflexiones">Reflexiones y Pensamientos</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Filósofo Shadowalker987 - Ideas y Reflexión",
+        "description": "Blog de filosofía y reflexiones filosóficas",
+        "url": "https://shadowalker987.github.io/Filosofia/"
+    }
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Metatags Optimizados -->
+    <meta name="description" content="Blog de filosofía por Shadowalker987 - Explorando los grandes pensamientos, reflexiones y análisis filosóficos. Un espacio para debatir las grandes preguntas de la existencia.">
+    <meta name="keywords" content="filosofía, pensadores, filosofía moderna, reflexiones filosóficas, Shadowalker987, corrientes filosóficas, pensamiento crítico">
+    <meta name="author" content="Shadowalker987">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="googlebot" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shadowalker987.github.io/Filosofia/">
+    <meta property="og:title" content="Shadowalker987 - Ideas de Filosofía">
+    <meta property="og:description" content="Blog de filosofía y reflexiones filosóficas - Explorando los grandes pensamientos de la humanidad">
+    
+    <title>Filósofo Shadowalker987 - Ideas y Reflexión</title>
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <style>
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #9c27b0 !important;
+        }
+        .filosofia-header {
+            background: linear-gradient(to right, #1a1a1a, #2d1a3d);
+            padding: 4rem 0;
+            text-align: center;
+            color: #fff;
+        }
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out;
+        }
+        @keyframes octocat-wave {
+            0%, 100% { transform: rotate(0) }
+            20%, 60% { transform: rotate(-25deg) }
+            40%, 80% { transform: rotate(10deg) }
+        }
+        article {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        article:hover {
+            transform: translateY(-5px);
+        }
+        .text-primary {
+            color: #9c27b0 !important;
+        }
+        .seo-text {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- GitHub Corner -->
+    <a href="https://github.com/shadowalker987/filosofia" class="github-corner" aria-label="Ver en GitHub">
+        <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#9c27b0; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Shadowalker987</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pensadores">Pensadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#corrientes">Corrientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reflexiones">Reflexiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header con título principal -->
+    <header class="filosofia-header" id="inicio">
+        <div class="container">
+            <h1 class="display-3 mb-4">Filósofo Shadowalker987</h1>
+            <h2 class="display-5 mb-5">Ideas y Reflexión</h2>
+            <div class="mt-4">
+                <a href="https://github.com/shadowalker987/filosofia" class="btn btn-outline-light">
+                    <i class="fab fa-github me-2"></i>Ver en GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container mt-5">
+        <!-- Imágenes decorativas -->
+        <div class="position-fixed top-0 start-0" style="z-index: -1; opacity: 0.2">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" 
+                 alt="Montañas" class="img-fluid" style="max-width: 300px;">
+        </div>
+        <div class="position-fixed top-0 end-0" style="z-index: -1; opacity: 0.2">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b" 
+                 alt="Naturaleza" class="img-fluid" style="max-width: 300px;">
+        </div>
+
+        <!-- Primera reflexión -->
+        <article class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="display-6 mb-4 text-primary">NO PUEDES CAMBIAR A NADIE</h2>
+            <p class="lead text-dark">
+                No puedes cambiar a una persona. Puedes estar a su lado, ofrecer tu estabilidad, 
+                tu sensatez, tu paz. Puedes compartir tu viaje con ellos, ofrecer tu perspectiva, 
+                pero no su dolor, no puedes cambiar su sendero por ellos, no puedes ofrecerles 
+                respuestas que puedan procesar en este mismo momento.
+            </p>
+            <p class="text-dark">
+                Deberán hallar sus propias respuestas en su propio tiempo, al final los seres 
+                humanos somos seres que aprendemos de errores y experiencias y eso no se podrá cambiar.
+            </p>
+        </article>
+
+        <!-- Segunda reflexión -->
+        <article class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="display-6 mb-4 text-primary">LOS SERES HUMANOS SOMOS SERES EGOÍSTAS</h2>
+            <p class="lead text-dark">
+                Los seres humanos somos egoístas por naturaleza, y esto no es algo necesariamente 
+                malo, sino una característica que compartimos todos.
+            </p>
+            <p class="text-dark">
+                Cuando alguien realiza una acción considerada buena o amable, en el fondo lo hace 
+                buscando algún tipo de satisfacción personal: ya sea sentirse bien consigo mismo, 
+                obtener reconocimiento o esperar una futura recompensa. No significa que las personas 
+                sean malas, sino que siempre actúan con base en lo que creen que les beneficiarán 
+                de alguna manera.
+            </p>
+        </article>
+
+        <!-- Sección de contribución -->
+        <section class="alert alert-info mt-4">
+            <h3><i class="fab fa-github me-2"></i>¿Quieres contribuir?</h3>
+            <p>Este proyecto es de código abierto. Puedes contribuir con tus propias reflexiones filosóficas a través de GitHub.</p>
+            <a href="https://github.com/shadowalker987/filosofia" class="btn btn-primary">
+                Contribuir al proyecto
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light mt-5 py-3">
+        <div class="container text-center">
+            <p>
+                <a href="https://github.com/shadowalker987" class="text-light text-decoration-none">
+                    <i class="fab fa-github me-2"></i>Sígueme en GitHub
+                </a>
+            </p>
+            <!-- Enlaces ocultos para SEO -->
+            <div class="seo-text">
+                <a href="#inicio">Inicio</a>
+                <a href="#pensadores">Pensadores Filosóficos</a>
+                <a href="#corrientes">Corrientes Filosóficas</a>
+                <a href="#reflexiones">Reflexiones y Pensamientos</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Filósofo Shadowalker987 - Ideas y Reflexión",
+        "description": "Blog de filosofía y reflexiones filosóficas",
+        "url": "https://shadowalker987.github.io/Filosofia/"
+    }
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Metatags Optimizados -->
+    <meta name="description" content="Blog de filosofía por Shadowalker987 - Explorando los grandes pensamientos, reflexiones y análisis filosóficos. Un espacio para debatir las grandes preguntas de la existencia.">
+    <meta name="keywords" content="filosofía, pensadores, filosofía moderna, reflexiones filosóficas, Shadowalker987, corrientes filosóficas, pensamiento crítico">
+    <meta name="author" content="Shadowalker987">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="googlebot" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shadowalker987.github.io/Filosofia/">
+    <meta property="og:title" content="Shadowalker987 - Ideas de Filosofía">
+    <meta property="og:description" content="Blog de filosofía y reflexiones filosóficas - Explorando los grandes pensamientos de la humanidad">
+    
+    <title>Filósofo Shadowalker987 - Ideas y Reflexión</title>
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <style>
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #9c27b0 !important;
+        }
+        .filosofia-header {
+            background: linear-gradient(to right, #1a1a1a, #2d1a3d);
+            padding: 4rem 0;
+            text-align: center;
+            color: #fff;
+        }
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out;
+        }
+        @keyframes octocat-wave {
+            0%, 100% { transform: rotate(0) }
+            20%, 60% { transform: rotate(-25deg) }
+            40%, 80% { transform: rotate(10deg) }
+        }
+        article {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        article:hover {
+            transform: translateY(-5px);
+        }
+        .text-primary {
+            color: #9c27b0 !important;
+        }
+        .seo-text {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- GitHub Corner -->
+    <a href="https://github.com/shadowalker987/filosofia" class="github-corner" aria-label="Ver en GitHub">
+        <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#9c27b0; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Shadowalker987</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pensadores">Pensadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#corrientes">Corrientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reflexiones">Reflexiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header con título principal -->
+    <header class="filosofia-header" id="inicio">
+        <div class="container">
+            <h1 class="display-3 mb-4">Filósofo Shadowalker987</h1>
+            <h2 class="display-5 mb-5">Ideas y Reflexión</h2>
+            <div class="mt-4">
+                <a href="https://github.com/shadowalker987/filosofia" class="btn btn-outline-light">
+                    <i class="fab fa-github me-2"></i>Ver en GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container mt-5">
+        <!-- Imágenes decorativas -->
+        <div class="position-fixed top-0 start-0" style="z-index: -1; opacity: 0.2">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" 
+                 alt="Montañas" class="img-fluid" style="max-width: 300px;">
+        </div>
+        <div class="position-fixed top-0 end-0" style="z-index: -1; opacity: 0.2">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b" 
+                 alt="Naturaleza" class="img-fluid" style="max-width: 300px;">
+        </div>
+
+        <!-- Primera reflexión -->
+        <article class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="display-6 mb-4 text-primary">NO PUEDES CAMBIAR A NADIE</h2>
+            <p class="lead text-dark">
+                No puedes cambiar a una persona. Puedes estar a su lado, ofrecer tu estabilidad, 
+                tu sensatez, tu paz. Puedes compartir tu viaje con ellos, ofrecer tu perspectiva, 
+                pero no su dolor, no puedes cambiar su sendero por ellos, no puedes ofrecerles 
+                respuestas que puedan procesar en este mismo momento.
+            </p>
+            <p class="text-dark">
+                Deberán hallar sus propias respuestas en su propio tiempo, al final los seres 
+                humanos somos seres que aprendemos de errores y experiencias y eso no se podrá cambiar.
+            </p>
+        </article>
+
+        <!-- Segunda reflexión -->
+        <article class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="display-6 mb-4 text-primary">LOS SERES HUMANOS SOMOS SERES EGOÍSTAS</h2>
+            <p class="lead text-dark">
+                Los seres humanos somos egoístas por naturaleza, y esto no es algo necesariamente 
+                malo, sino una característica que compartimos todos.
+            </p>
+            <p class="text-dark">
+                Cuando alguien realiza una acción considerada buena o amable, en el fondo lo hace 
+                buscando algún tipo de satisfacción personal: ya sea sentirse bien consigo mismo, 
+                obtener reconocimiento o esperar una futura recompensa. No significa que las personas 
+                sean malas, sino que siempre actúan con base en lo que creen que les beneficiarán 
+                de alguna manera.
+            </p>
+        </article>
+
+        <!-- Sección de contribución -->
+        <section class="alert alert-info mt-4">
+            <h3><i class="fab fa-github me-2"></i>¿Quieres contribuir?</h3>
+            <p>Este proyecto es de código abierto. Puedes contribuir con tus propias reflexiones filosóficas a través de GitHub.</p>
+            <a href="https://github.com/shadowalker987/filosofia" class="btn btn-primary">
+                Contribuir al proyecto
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light mt-5 py-3">
+        <div class="container text-center">
+            <p>
+                <a href="https://github.com/shadowalker987" class="text-light text-decoration-none">
+                    <i class="fab fa-github me-2"></i>Sígueme en GitHub
+                </a>
+            </p>
+            <!-- Enlaces ocultos para SEO -->
+            <div class="seo-text">
+                <a href="#inicio">Inicio</a>
+                <a href="#pensadores">Pensadores Filosóficos</a>
+                <a href="#corrientes">Corrientes Filosóficas</a>
+                <a href="#reflexiones">Reflexiones y Pensamientos</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Filósofo Shadowalker987 - Ideas y Reflexión",
+        "description": "Blog de filosofía y reflexiones filosóficas",
+        "url": "https://shadowalker987.github.io/Filosofia/"
+    }
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Metatags Optimizados -->
+    <meta name="description" content="Blog de filosofía por Shadowalker987 - Explorando los grandes pensamientos, reflexiones y análisis filosóficos. Un espacio para debatir las grandes preguntas de la existencia.">
+    <meta name="keywords" content="filosofía, pensadores, filosofía moderna, reflexiones filosóficas, Shadowalker987, corrientes filosóficas, pensamiento crítico">
+    <meta name="author" content="Shadowalker987">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="googlebot" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shadowalker987.github.io/Filosofia/">
+    <meta property="og:title" content="Shadowalker987 - Ideas de Filosofía">
+    <meta property="og:description" content="Blog de filosofía y reflexiones filosóficas - Explorando los grandes pensamientos de la humanidad">
+    
+    <title>Filósofo Shadowalker987 - Ideas y Reflexión</title>
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <style>
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #9c27b0 !important;
+        }
+        .filosofia-header {
+            background: linear-gradient(to right, #1a1a1a, #2d1a3d);
+            padding: 4rem 0;
+            text-align: center;
+            color: #fff;
+        }
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out;
+        }
+        @keyframes octocat-wave {
+            0%, 100% { transform: rotate(0) }
+            20%, 60% { transform: rotate(-25deg) }
+            40%, 80% { transform: rotate(10deg) }
+        }
+        article {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        article:hover {
+            transform: translateY(-5px);
+        }
+        .text-primary {
+            color: #9c27b0 !important;
+        }
+        .seo-text {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- GitHub Corner -->
+    <a href="https://github.com/shadowalker987/filosofia" class="github-corner" aria-label="Ver en GitHub">
+        <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#9c27b0; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Shadowalker987</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pensadores">Pensadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#corrientes">Corrientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reflexiones">Reflexiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header con título principal -->
+    <header class="filosofia-header" id="inicio">
+        <div class="container">
+            <h1 class="display-3 mb-4">Filósofo Shadowalker987</h1>
+            <h2 class="display-5 mb-5">Ideas y Reflexión</h2>
+            <div class="mt-4">
+                <a href="https://github.com/shadowalker987/filosofia" class="btn btn-outline-light">
+                    <i class="fab fa-github me-2"></i>Ver en GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container mt-5">
+        <!-- Imágenes decorativas -->
+        <div class="position-fixed top-0 start-0" style="z-index: -1; opacity: 0.2">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" 
+                 alt="Montañas" class="img-fluid" style="max-width: 300px;">
+        </div>
+        <div class="position-fixed top-0 end-0" style="z-index: -1; opacity: 0.2">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b" 
+                 alt="Naturaleza" class="img-fluid" style="max-width: 300px;">
+        </div>
+
+        <!-- Primera reflexión -->
+        <article class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="display-6 mb-4 text-primary">NO PUEDES CAMBIAR A NADIE</h2>
+            <p class="lead text-dark">
+                No puedes cambiar a una persona. Puedes estar a su lado, ofrecer tu estabilidad, 
+                tu sensatez, tu paz. Puedes compartir tu viaje con ellos, ofrecer tu perspectiva, 
+                pero no su dolor, no puedes cambiar su sendero por ellos, no puedes ofrecerles 
+                respuestas que puedan procesar en este mismo momento.
+            </p>
+            <p class="text-dark">
+                Deberán hallar sus propias respuestas en su propio tiempo, al final los seres 
+                humanos somos seres que aprendemos de errores y experiencias y eso no se podrá cambiar.
+            </p>
+        </article>
+
+        <!-- Segunda reflexión -->
+        <article class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="display-6 mb-4 text-primary">LOS SERES HUMANOS SOMOS SERES EGOÍSTAS</h2>
+            <p class="lead text-dark">
+                Los seres humanos somos egoístas por naturaleza, y esto no es algo necesariamente 
+                malo, sino una característica que compartimos todos.
+            </p>
+            <p class="text-dark">
+                Cuando alguien realiza una acción considerada buena o amable, en el fondo lo hace 
+                buscando algún tipo de satisfacción personal: ya sea sentirse bien consigo mismo, 
+                obtener reconocimiento o esperar una futura recompensa. No significa que las personas 
+                sean malas, sino que siempre actúan con base en lo que creen que les beneficiarán 
+                de alguna manera.
+            </p>
+        </article>
+
+        <!-- Sección de contribución -->
+        <section class="alert alert-info mt-4">
+            <h3><i class="fab fa-github me-2"></i>¿Quieres contribuir?</h3>
+            <p>Este proyecto es de código abierto. Puedes contribuir con tus propias reflexiones filosóficas a través de GitHub.</p>
+            <a href="https://github.com/shadowalker987/filosofia" class="btn btn-primary">
+                Contribuir al proyecto
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light mt-5 py-3">
+        <div class="container text-center">
+            <p>
+                <a href="https://github.com/shadowalker987" class="text-light text-decoration-none">
+                    <i class="fab fa-github me-2"></i>Sígueme en GitHub
+                </a>
+            </p>
+            <!-- Enlaces ocultos para SEO -->
+            <div class="seo-text">
+                <a href="#inicio">Inicio</a>
+                <a href="#pensadores">Pensadores Filosóficos</a>
+                <a href="#corrientes">Corrientes Filosóficas</a>
+                <a href="#reflexiones">Reflexiones y Pensamientos</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Filósofo Shadowalker987 - Ideas y Reflexión",
+        "description": "Blog de filosofía y reflexiones filosóficas",
+        "url": "https://shadowalker987.github.io/Filosofia/"
+    }
+    </script>
+</body>
+</html>
