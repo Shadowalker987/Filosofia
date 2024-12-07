@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog de filosofía por Shadowalker987 - Reflexiones y pensamientos filosóficos">
+    
+    <!-- SEO Metatags Optimizados -->
+    <meta name="description" content="Blog de filosofía por Shadowalker987 - Explorando los grandes pensamientos, reflexiones y análisis filosóficos. Un espacio para debatir las grandes preguntas de la existencia.">
+    <meta name="keywords" content="filosofía, pensadores, filosofía moderna, reflexiones filosóficas, Shadowalker987, corrientes filosóficas, pensamiento crítico">
     <meta name="author" content="Shadowalker987">
-    <meta name="github-repo" content="https://github.com/shadowalker987/filosofia">
-    <title>Shadowalker987 - Ideas de Filosofía</title>
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="googlebot" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shadowalker987.github.io/Filosofia/">
+    <meta property="og:title" content="Shadowalker987 - Ideas de Filosofía">
+    <meta property="og:description" content="Blog de filosofía y reflexiones filosóficas - Explorando los grandes pensamientos de la humanidad">
+    
+    <title>Filósofo Shadowalker987 - Ideas y Reflexión</title>
+    
     <!-- Bootstrap 5 CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome para iconos -->
@@ -19,10 +33,10 @@
             color: #9c27b0 !important;
         }
         .filosofia-header {
-            background-color: #1a1a1a;
-            color: #fff;
-            padding: 3rem 0;
+            background: linear-gradient(to right, #1a1a1a, #2d1a3d);
+            padding: 4rem 0;
             text-align: center;
+            color: #fff;
         }
         .github-corner:hover .octo-arm {
             animation: octocat-wave 560ms ease-in-out;
@@ -31,6 +45,22 @@
             0%, 100% { transform: rotate(0) }
             20%, 60% { transform: rotate(-25deg) }
             40%, 80% { transform: rotate(10deg) }
+        }
+        article {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        article:hover {
+            transform: translateY(-5px);
+        }
+        .text-primary {
+            color: #9c27b0 !important;
+        }
+        .seo-text {
+            display: none;
         }
     </style>
 </head>
@@ -54,19 +84,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Inicio</a>
+                        <a class="nav-link active" href="#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pensadores</a>
+                        <a class="nav-link" href="#pensadores">Pensadores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Corrientes</a>
+                        <a class="nav-link" href="#corrientes">Corrientes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Reflexiones</a>
+                        <a class="nav-link" href="#reflexiones">Reflexiones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#cuestiones">Cuestiones</a> <!-- Nuevo enlace a Cuestiones -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -74,10 +107,10 @@
     </nav>
 
     <!-- Header con título principal -->
-    <header class="filosofia-header">
+    <header class="filosofia-header" id="inicio">
         <div class="container">
-            <h1 class="display-4">Ideas de Filosofía</h1>
-            <p class="lead">Explorando los grandes pensamientos de la humanidad</p>
+            <h1 class="display-3 mb-4">Filósofo Shadowalker987</h1>
+            <h2 class="display-5 mb-5">Ideas y Reflexión</h2>
             <div class="mt-4">
                 <a href="https://github.com/shadowalker987/filosofia" class="btn btn-outline-light">
                     <i class="fab fa-github me-2"></i>Ver en GitHub
@@ -87,19 +120,110 @@
     </header>
 
     <!-- Contenido principal -->
-    <div class="container mt-4">
-        <h2>Bienvenidos a nuestro espacio de reflexión</h2>
-        <p class="lead">Un lugar para explorar y debatir las grandes preguntas de la existencia</p>
-        
+    <main class="container mt-5">
+        <!-- Imágenes decorativas -->
+        <div class="position-fixed top-0 start-0" style="z-index: -1; opacity: 0.2">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" 
+                 alt="Montañas" class="img-fluid" style="max-width: 300px;">
+        </div>
+        <div class="position-fixed top-0 end-0" style="z-index: -1; opacity: 0.2">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b" 
+                 alt="Naturaleza" class="img-fluid" style="max-width: 300px;">
+        </div>
+
+        <!-- Primera reflexión -->
+        <article class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="display-6 mb-4 text-primary">NO PUEDES CAMBIAR A NADIE</h2>
+            <p class="lead text-dark">
+                No puedes cambiar a una persona. Puedes estar a su lado, ofrecer tu estabilidad, 
+                tu sensatez, tu paz. Puedes compartir tu viaje con ellos, ofrecer tu perspectiva, 
+                pero no su dolor, no puedes cambiar su sendero por ellos, no puedes ofrecerles 
+                respuestas que puedan procesar en este mismo momento.
+            </p>
+            <p class="text-dark">
+                Deberán hallar sus propias respuestas en su propio tiempo, al final los seres 
+                humanos somos seres que aprendemos de errores y experiencias y eso no se podrá cambiar.
+            </p>
+        </article>
+
+        <!-- Segunda reflexión -->
+        <article class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="display-6 mb-4 text-primary">LOS SERES HUMANOS SOMOS SERES EGOÍSTAS</h2>
+            <p class="lead text-dark">
+                Los seres humanos somos egoístas por naturaleza, y esto no es algo necesariamente 
+                malo, sino una característica que compartimos todos.
+            </p>
+            <p class="text-dark">
+                Cuando alguien realiza una acción considerada buena o amable, en el fondo lo hace 
+                buscando algún tipo de satisfacción personal: ya sea sentirse bien consigo mismo, 
+                obtener reconocimiento o esperar una futura recompensa. No significa que las personas 
+                sean malas, sino que siempre actúan con base en lo que creen que les beneficiarán 
+                de alguna manera.
+            </p>
+        </article>
+
+        <!-- Nueva sección: LAS ESCUELAS NOS MOLDEAN -->
+        <article class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="display-6 mb-4 text-primary">LAS ESCUELAS NOS MOLDEAN</h2>
+            <p class="lead text-dark">
+                La escuela es un reflejo de la sociedad. Aunque la escuela debería ser un lugar donde los estudiantes son tratados de manera justa y en igualdad de oportunidades, en realidad está dividida en roles, clases y jerarquías que reproducen desigualdades del mundo exterior.
+            </p>
+            <p class="text-dark">
+                En este sentido, la escuela no es diferente de cualquier otra institución social que favorece a los más aptos y coloca obstáculos para los menos privilegiados. Aunque la escuela promueve la meritocracia, en la práctica, ésta crea una competición de los más inteligentes, astutos o manipuladores según los que triunfen. Esto influye mucho también según el estatus económico y la desigualdad de oportunidades. En vista, la escuela está hecha para encajar en un sistema más amplio de control social. La escuela es para reforzar las desigualdades sociales.
+            </p>
+        </article>
+
+        <!-- Nueva sección: LA LIBERTAD ES UNA FALSA ILUSIÓN -->
+        <article class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="display-6 mb-4 text-primary">LA LIBERTAD ES UNA FALSA ILUSIÓN</h2>
+            <p class="lead text-dark">
+                La libertad que los humanos creen tener es solo una falsa ilusión. Los seres humanos estamos condicionados constantemente por factores externos, como las normas sociales, las expectativas y el sistema en el que vivimos. Aunque los seres humanos creemos actuar en libertad, en realidad son acciones y decisiones moldeadas y restringidas por las reglas de la institución. Toda acción está controlada por miedo y deseo. Al final todos estamos en nuestra propia esclavitud.
+            </p>
+            <blockquote class="blockquote">
+                <p>"La verdad es irrelevante frente a la percepción de la época."</p>
+            </blockquote>
+        </article>
+
+        <!-- Nueva sección: ¿Es Correcto Hacer Algo Malo para Conseguir un Bien Mayor? -->
+        <article class="mb-5 p-4 bg-light rounded shadow">
+            <h2 class="display-6 mb-4 text-primary">¿Es Correcto Hacer Algo Malo para Conseguir un Bien Mayor?</h2>
+            <p class="lead text-dark">
+                El ser humano siempre ha intentado entender qué está bien y qué está mal, pero a veces se enfrenta a situaciones donde hacer algo que parece malo puede traer algo bueno a largo plazo.
+            </p>
+            <p class="text-dark">
+                Una teoría que habla de esto es el utilitarismo, que dice que lo correcto es hacer lo que traiga más beneficio para la mayoría de las personas, incluso si para lograrlo hay que tomar decisiones difíciles.
+            </p>
+            <p class="text-dark">
+                Este pensamiento tiene algo en común con lo que decía Maquiavelo. En su libro El Príncipe, él afirmaba que "el fin justifica los medios", es decir, que a veces es necesario hacer cosas malas si con eso se consigue un bien mayor, como por ejemplo, mantener el poder o hacer el bien para la mayoría.
+            </p>
+            <p class="text-dark">
+                Ambas ideas nos hacen pensar si está bien sacrificar algunos principios para conseguir algo más grande y si realmente todo lo que hacemos justifica el resultado que buscamos.
+            </p>
+        </article>
+
+        <!-- Nueva sección: ¿Es mejor pensar por ti mismo o seguir la corriente? -->
+        <article class="mb-5 p-4 bg-light rounded shadow" id="cuestiones">
+            <h2 class="display-6 mb-4 text-primary">¿Es mejor pensar por ti mismo o seguir la corriente?</h2>
+            <p class="lead text-dark">
+                El pensamiento crítico es cuando no te conformas con lo que te dicen y buscas entender las cosas por ti mismo. Te hace cuestionar todo lo que te enseñan y no aceptar todo sin pensarlo. En cambio, la conformidad es simplemente seguir lo que todos hacen, para no destacar ni meterte en problemas.
+            </p>
+            <p class="text-dark">
+                La pregunta es: ¿Deberíamos arriesgar la comodidad de seguir la corriente para ser realmente nosotros mismos, aunque eso implique conflictos?
+            </p>
+            <p class="text-dark">
+                Es fácil seguir las reglas, pero ¿realmente estamos avanzando si no cuestionamos nada? A veces, ser diferente puede cambiar las cosas para mejor.
+            </p>
+        </article>
+
         <!-- Sección de contribución -->
-        <div class="alert alert-info mt-4">
-            <h4><i class="fab fa-github me-2"></i>¿Quieres contribuir?</h4>
+        <section class="alert alert-info mt-4">
+            <h3><i class="fab fa-github me-2"></i>¿Quieres contribuir?</h3>
             <p>Este proyecto es de código abierto. Puedes contribuir con tus propias reflexiones filosóficas a través de GitHub.</p>
             <a href="https://github.com/shadowalker987/filosofia" class="btn btn-primary">
                 Contribuir al proyecto
             </a>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-light mt-5 py-3">
@@ -109,10 +233,28 @@
                     <i class="fab fa-github me-2"></i>Sígueme en GitHub
                 </a>
             </p>
+            <!-- Enlaces ocultos para SEO -->
+            <div class="seo-text">
+                <a href="#inicio">Inicio</a>
+                <a href="#pensadores">Pensadores Filosóficos</a>
+                <a href="#corrientes">Corrientes Filosóficas</a>
+                <a href="#reflexiones">Reflexiones y Pensamientos</a>
+            </div>
         </div>
     </footer>
 
     <!-- Bootstrap 5 JS Bundle con Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Filósofo Shadowalker987 - Ideas y Reflexión",
+        "description": "Blog de filosofía y reflexiones filosóficas",
+        "url": "https://shadowalker987.github.io/Filosofia/"
+    }
+    </script>
 </body>
 </html>
