@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Contacto - Filósofo Shadowalker987</title>
-    
+    <!-- Añadido favicon -->
+    <link rel="icon" href="ruta/a/tu/favicon.ico" type="image/x-icon">
+
     <!-- Meta etiquetas para SEO -->
     <meta name="description" content="Página de contacto del filósofo Shadowalker987. Si tienes alguna pregunta o comentario, contáctame.">
     <meta name="keywords" content="contacto, filósofo, Shadowalker987, preguntas, comentarios, filosofía, educación">
@@ -51,7 +53,7 @@
     <main class="container mt-5">
         <h1 class="display-4 text-primary">Contacto</h1>
         <p class="lead">Si deseas ponerte en contacto, puedes enviarme un correo a:</p>
-        <p class="text-dark"><strong>correo@ejemplo.com</strong></p>
+        <p class="text-dark"><strong><a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></strong></p>
         <p class="text-dark">O seguirme en mis redes sociales:</p>
         <ul>
             <li><a href="https://github.com/shadowalker987" class="text-dark">GitHub</a></li>
@@ -64,7 +66,7 @@
         <p>Este sitio web está dedicado a la filosofía y a la exploración de ideas profundas. Aquí encontrarás recursos, artículos y discusiones sobre diversos pensadores y temas filosóficos.</p>
 
         <h2 class="mt-5">Formulario de Contacto</h2>
-        <form action="enviar_contacto.php" method="post"> <!-- Cambia la acción según tu backend -->
+        <form action="enviar_contacto.php" method="post" novalidate> <!-- Añadido novalidate para manejar validaciones personalizadas -->
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre:</label>
                 <input type="text" class="form-control" id="nombre" name="nombre" required>
